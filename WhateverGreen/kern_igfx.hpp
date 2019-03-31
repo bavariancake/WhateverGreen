@@ -282,7 +282,7 @@ private:
 	/**
 	 *  Patch the maximum link rate in the DPCD buffer read from the built-in display
 	 */
-	bool maxLinkRatePatch {false};
+	uint32_t maxLinkRatePatch {0};
 	
 	/**
 	 *  Set to true if PAVP code should be disabled
@@ -452,7 +452,7 @@ private:
 	 *
 	 *  Default value is 0x14 (5.4 Gbps, HBR2) for 4K laptop display
 	 */
-	uint8_t maxLinkRate {0x14};
+	uint32_t maxLinkRate {0x14};
 	
 	/**
 	 *  ReadAUX wrapper to modify the maximum link rate value in the DPCD buffer
